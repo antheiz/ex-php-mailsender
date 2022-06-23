@@ -15,7 +15,7 @@ $mail = new PHPMailer();
 
 $mail->isSMTP();
 $mail->SMTPDebug = 0;
-$mail->Host = 'in-v3.mailjet.com';
+$mail->Host = 'YOUR_SMTP';
 $mail->SMTPAuth = true;
 $mail->Username = $_ENV['USERNAME'];
 $mail->Password = $_ENV['PASSWORD'];
@@ -25,7 +25,7 @@ $mail->Port = 587;
 
 // print_r($_POST['email'])
 
-$mail->setFrom('theissentani@gmail.com', 'no-reply');
+$mail->setFrom('SENDER_EMAIL', 'SENDER_NAME');
 
 $mail->isHTML(true);
 
